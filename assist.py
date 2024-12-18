@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 #https://platform.openai.com/playground/assistants
 # Initialize the client and mixer
 load_dotenv()
-client = OpenAI(default_headers={"OpenAI-Beta": "assistants=v2"}, api_key = os.environ.GET('OPENAI_API_KEY'))
+client = OpenAI(default_headers={"OpenAI-Beta": "assistants=v2"}, api_key = os.environ.get('OPENAI_API_KEY'))
 mixer.init()
 
 assistant_id = "asst_e1lRtkunXL6VOgsuiLRERBhK"
