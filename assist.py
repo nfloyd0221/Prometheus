@@ -4,7 +4,7 @@ from pygame import mixer
 import os
 #https://platform.openai.com/playground/assistants
 # Initialize the client and mixer
-client = OpenAI(default_headers={"OpenAI-Beta": "assistants=v2"}, api_key = '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')
+client = OpenAI(default_headers={"OpenAI-Beta": "assistants=v2"}, api_key = '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')
 mixer.init()
 
 assistant_id = "asst_e1lRtkunXL6VOgsuiLRERBhK"
