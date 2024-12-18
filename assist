@@ -4,11 +4,11 @@ from pygame import mixer
 import os
 #https://platform.openai.com/playground/assistants
 # Initialize the client and mixer
-client = OpenAI(default_headers={"OpenAI-Beta": "assistants=v2"})
+client = OpenAI(default_headers={"OpenAI-Beta": "assistants=v2"}, api_key = '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')
 mixer.init()
 
-assistant_id = ""
-thread_id = ""
+assistant_id = "asst_e1lRtkunXL6VOgsuiLRERBhK"
+thread_id = "thread_1re2tUBoGK3hH2UqQTJJ57hS"
 
 # Retrieve the assistant and thread
 assistant = client.beta.assistants.retrieve(assistant_id)
