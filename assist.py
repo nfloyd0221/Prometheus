@@ -3,8 +3,10 @@ import time
 from pygame import mixer
 import os
 from googlesearch import search
+from dotenv import load_dotenv
 
 # Put your API key here with 'OpenAI(api_key="key_here")'
+load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 mixer.init()
 
