@@ -2,7 +2,7 @@ from openai import OpenAI
 import time
 from pygame import mixer
 import os
-from dotenv import OPENAI_API_KEY
+from dotenv import load_dotenv
 #https://platform.openai.com/playground/assistants
 # Initialize the client and mixer
 load_dotenv()
